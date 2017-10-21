@@ -1,0 +1,5 @@
+[27-Aug-2017 14:24:58 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/ndusys0/public_html/demo/01/Api/conn.php on line 15
+[27-Aug-2017 14:28:33 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/ndusys0/public_html/demo/01/Api/conn.php on line 15
+[16-Oct-2017 08:57:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ndusys0/public_html/demo/01/Api/getInvestments2.php:2) in /home/ndusys0/public_html/demo/01/Api/getInvestments2.php on line 2
+[16-Oct-2017 08:58:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ndusys0/public_html/demo/01/Api/notifications.php:2) in /home/ndusys0/public_html/demo/01/Api/notifications.php on line 2
+[16-Oct-2017 18:20:23 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ndusys0/public_html/demo/01/Api/notifications.php:2) in /home/ndusys0/public_html/demo/01/Api/notifications.php on line 2

@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html ng-app="App">
+<head>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="angularjs/Config.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="angularjs/app.js"></script>
+    <script src="routes/routes.js"></script>
+
+    <!--Controllers-->
+    <script src="controllers/account/accountController.js"></script>
+    <script src="controllers/customer/dashboardController.js"></script>
+    <script src="controllers/customer/investmentController.js"></script>
+    <script src="controllers/admin/administratorController.js"></script>
+    <script src="controllers/admin/admin_investmentsController.js"></script>
+    <script src="controllers/admin/admin_announcementsController.js"></script>
+    <script src="controllers/transiction/transictionController.js"></script>
+    <script src="js/emails.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Happy | Friday </title>
+	<meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="icon" href="content/images/coin.jpg" type="image/png" sizes="16x16">
+    <!--bootstrap 3.3.7-->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="bower_components/Ionicons/css/ionicons.min.css" rel="stylesheet" />
+
+    <link href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" /> 
+    <link href="css/styles.css" rel="stylesheet" />
+    <!--SB Admin - style-->
+    <link href="dist/css/AdminLTE.min.css" rel="stylesheet" />
+    <link href="dist/css/skins/_all-skins.min.css" rel="stylesheet" />
+    <link href="content/css/fonts.googleapis.css" rel="stylesheet" />
+
+    <style type="text/css">
+        .jqstooltip {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            visibility: hidden;
+            background: rgb(0, 0, 0) transparent;
+            background-color: rgba(0,0,0,0.6);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+            color: white;
+            font: 10px arial, san serif;
+            text-align: left;
+            white-space: nowrap;
+            padding: 5px;
+            border: 1px solid white;
+            box-sizing: content-box;
+            z-index: 10000;
+        }
+
+        .jqsfield {
+            color: white;
+            font: 10px arial, san serif;
+            text-align: left;
+        }
+    </style>
+</head>
+<body class="skin-green sidebar-mini" style="height:auto; min-height:100%;" >
+    <div class="wrapper" style="height:auto; min-height:500pxss">
+        <!--Navigation Top-->
+        <header class="main-header">
+            <div class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><b>H</b>F</span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><b>Happy</b>|<small>Friday</small></span>
+            </div>
+            <nav class="navbar navbar-static-top">
+                <p  class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </p>                
+            </nav>
+        </header>
+        <!--end navigation Top-->
+        <ng-view></ng-view>
+
+        <!--Footer Here-->
+        <footer class="main-footer">
+            Copyright © 2017-2018   All rights reserved Happy | Friday.
+        </footer>
+        </div>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/chart.js/Chart.js"></script>
+        <script src="dist/js/pages/dashboard2.js"></script>
+        <script src="bower_components/fastclick/lib/fastclick.js"></script>
+        <script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="dist/js/adminlte.min.js"></script>
+        <script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

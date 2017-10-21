@@ -1,0 +1,30 @@
+﻿<div class="register-box">
+    <div class="register-logo">
+    </div>
+    <div class="register-box-body">
+        <p class="login-box-msg">Re-Invest</p>
+        <div>
+            <p> You can re-invest upto R {{amount}}</p>
+            <div class="form-group has-feedback">
+                <input type="text" class="form-control" ng-model="amount_in" placeholder="Amount to Re-invest">
+                <span class="glyphicons glyphicons-coins form-control-feedback"></span>
+            </div>
+
+       
+
+            <div class="row">
+                <div class="col-xs-8">
+
+                </div>
+                <!-- /.col -->
+                <div class="col-xs-4">
+                    <button class="btn btn-primary btn-block btn-flat" ng-click="SaveReinvest()"> Reinvest</button>
+                </div>
+                <!-- /.col -->
+            </div>
+        </div>
+
+        <p class="text-center">{{message}}</p><br>
+    </div>
+    <!-- /.form-box -->
+</div>               

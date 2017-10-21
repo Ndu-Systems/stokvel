@@ -1,0 +1,111 @@
+﻿<!--Side Navigation Bar-->
+<aside class="main-sidebar">
+    <section class="sidebar" style="height: auto;">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img src="content/images/user.png" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+                <p>{{name}}</p>
+                <a href="#my-dashboard"><i class="fa fa-circle text-success"></i> Online</a><br>
+                <a href="#logout"><i class="fa fa-ban text-warning"></i> Sign out</a><br>
+            </div>
+        </div>
+        <!-- /.search form -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu tree" data-widget="tree">
+            <li class="header">MAIN NAVIGATION</li>
+            <li class="active treeview menu-open">
+                <a href="#my-dashboard">
+                    <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="#myprofile"><i class="fa fa-user-circle-o"></i>My Profile</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#404">
+                    <i class="fa fa-comments-o"></i>
+                    <span>Notifications</span>
+                    <span class="pull-right-container">
+                        <span class="label label-warning pull-right">3</span>
+                    </span>
+                </a>
+            </li>
+            <li class="">
+                <a href="#invest">
+                    <i class="fa fa-line-chart"></i>
+                    <span>New Investments</span>
+                </a>
+
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-history"></i>
+                    <span>History</span>
+                </a>
+            </li>
+
+        </ul>
+    </section>
+</aside>
+
+<!--main content page here-->
+<div class="content-wrapper" style="min-height: 915.6px;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            <i class="fa fa-dashboard"></i>
+            Dashboard |
+            <small>Happy Friday v1.0</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#my-dashboard"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">History</li>
+        </ol>
+    </section>
+
+    <div class="container">
+        <div class="register-logo">
+        </div>
+        <div class="row">
+            <div class="box box-info">
+                <div class="box-header with-border bg-aqua">
+                    <h3 class="box-title">My investments history- <i class="ion ion-android-folder"></i></h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">                  
+                    <div class="col-md-4" ng-repeat="investment in investments">
+                        <div class="box box-widget widget-user-2">
+                            <div class="widget-user-header bg-red-gradient">
+                                <div class="wwidget-user-image">
+                                    <span><i class="fa fa-shopping-cart fa-lg fa-3x" aria-hidden="true"></i></span><p class="pull-right"><b>Your Order</b>: #1 </p>
+                                </div>
+                            </div>
+                            <div class="box-footer no-padding">
+                                <ul class="nav nav-stacked">
+                                    <li><a href="">Status <p class="pull-right badge bg-yellow">{{investment.status}}</p></a></li>
+                                    <li><a href="">Date Requested <p class="pull-right badge bg-yellow">{{investment.date}}</p></a></li>
+                                    <li><a href="">Maturity Date <p class="pull-right badge bg-green">{{investment.expectedDate}}</p></a></li>
+                                    <li><a href="">Invested Amount <p class="pull-right badge bg-yellow">R {{investment.amount}}</p></a></li>
+                                    <li><a href="">Expected Amount <p class="pull-right badge bg-green">R {{investment.amount*1.5}}</p></a></li>
+                                </ul>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
